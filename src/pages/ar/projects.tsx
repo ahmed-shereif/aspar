@@ -42,7 +42,7 @@ export default function Projects() {
       <Head>
         <title>Our Projects | Aspar for packaging solutions</title>
       </Head>
-      <motion.main dir="rtl" className="overflow-x-hidden lg:pt-20 lg:p-0 mb-4 bg-primary">
+      <motion.main dir="rtl" className="overflow-x-hidden lg:pt-[73px] lg:p-0 mb-4 bg-primary">
 
         <section className=' flex lg:min-h-screen justify-center flex-wrap bg-white'>
           <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className="w-full  relative text-black flex justify-center items-center ">

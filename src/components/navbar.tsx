@@ -375,7 +375,7 @@ const Navbar = (): JSX.Element => {
 
   return (
     <motion.div dir={lang === 'en' ? 'ltr' : 'rtl'} className=" lg:absolute  top-0 w-full h-20 left-0 z-50" animate={{ opacity: [0, 1], y: [-20, 0] }} transition={{ ease: 'linear', duration: 0.5 }} >
-      <Link href={lang === 'en' && linker ? `/ar/${linker}` : lang === 'en' && !linker ? `/ar/` : lang === 'ar' && linker ? `/en/${linker}` : '/en'} className="h-8 w-8 z-[10000] hidden lg:block lg:absolute border-primary border cursor-pointer right-2 top-6 lg:my-auto lg:bottom-0 lg:top-2 lg:left-5 lg:right-0 rtl:lg:right-5 rtl:left-2 rtl:top-6 rounded-full overflow-hidden">
+      <Link href={lang === 'en' && linker ? `/ar/${linker}` : lang === 'en' && !linker ? `/ar/` : lang === 'ar' && linker ? `/en/${linker}` : '/en'} className="h-8 w-8 z-[10000] hidden lg:block lg:absolute border-primary border cursor-pointer right-2 top-1 lg:my-auto lg:bottom-0 lg:top-1 lg:left-5 lg:right-0 rtl:lg:right-5 rtl:left-2 rtl:top-1 rounded-full overflow-hidden">
         <img className="h-full w-full object-cover " alt="lang" src={lang === 'en' ? '/ar.png' : '/en.png'} />
       </Link>
       {
