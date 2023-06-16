@@ -13,7 +13,7 @@ const LINKS_DATA = [
   { id: 1, text: 'Home', ar: 'الرئيــــسية', link: '/' },
   { id: 2, text: 'About', ar: 'عن أسبار', link: 'about' },
   { id: 3, text: 'Process', ar: 'سير العملية', link: 'process' },
-  { id: 4, text: 'Projects', ar: 'المشاريع', link: 'projects' },
+  { id: 4, text: 'Packaging', ar: 'التغليف', link: 'projects' },
   { id: 5, text: 'Contact', ar: 'تواصل معنا', link: 'contact' },
 ]
 
