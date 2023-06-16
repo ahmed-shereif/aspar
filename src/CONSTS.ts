@@ -1,0 +1,1 @@
+export const TRANS = {ease:'linear',duration:0.6}

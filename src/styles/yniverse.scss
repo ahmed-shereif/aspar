@@ -1,0 +1,134 @@
+
+
+
+.ytn-main{
+
+  @apply bg-primary text-accent hover:bg-primary hover:text-accent
+}
+
+.screen-optz{
+  @apply max-w-screen-2xl  
+}
+
+
+.border-trans{
+  transition: border-color 0.25s;
+}
+
+
+.in-colors{
+  @apply bg-secondary text-primary
+}
+
+.btn-hover-primary{
+  @apply hover:border-primary hover:bg-transparent hover:text-primary
+}
+.btn-hover-sub{
+  @apply hover:border-secondary hover:bg-transparent hover:text-secondary
+}
+.btn-hover-accent{
+  @apply hover:border-accent hover:bg-transparent hover:text-accent
+}
+
+
+.loading-spinner{
+  animation: y-appear 800ms linear;
+  @apply  animate-spin
+}
+
+
+.animate-op{
+  animation: animation-opacity linear 250ms;
+}
+
+@keyframes  animation-opacity {
+  from{
+    opacity: 0;
+  }  
+  to{
+    opacity: 1;
+  }
+}
+
+
+.error-loading{
+  @apply bg-error text-accent hover:border-error hover:bg-transparent hover:text-error ;
+}
+
+
+.success-loading{
+  @apply bg-success text-accent hover:border-success hover:bg-transparent hover:text-success ;
+}
+
+
+.imp-text-white{
+  color: white !important ;
+}
+
+@keyframes y-appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.ya-success{
+  @apply alert-success
+}
+
+.ya-error{
+  @apply alert-error
+}
+
+.appearing{
+  animation: backInRight 1s linear forwards;
+}
+.disappearing{
+  animation: backOutRight 1.5s ;
+}
+
+
+.toast-appearing{
+  animation: toast-appearing-anime 250ms linear forwards;
+}
+
+
+@keyframes toast-appearing-anime {
+  from{
+    right: -20rem;
+  }
+  to{
+    right: 0;
+  }
+}
+
+.toast-disappearing{
+  animation: toast-disappearing-anime 250ms linear forwards;
+}
+
+.loading-dis{
+  width: 0;
+  animation: toast-disappearing-loading 3s linear forwards ;
+}
+
+
+@keyframes toast-disappearing-anime {
+  from{
+    right: 0rem;
+  }
+  to{
+    right: -22rem;
+  }
+}
+
+@keyframes toast-disappearing-loading {
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
