@@ -88,11 +88,11 @@ export default function Projects() {
 
 
           <div className='w-full mt-5'>
-            <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className='h-80 lg:h-[64vh]  min-w-full  overflow-hidden'>
+            <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className=' h-32 lg:h-[60vh]  min-w-full  overflow-hidden '>
               <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 2500, disableOnInteraction: false, }} className="mySwiper w-full h-full select-none">
                 {
                   SLIDER_DATA_A.map(slid =>
-                    <SwiperSlide key={slid.id}><Image className=' object-contain w-full' alt={`sample-${slid.id}`} src={slid.src} fill priority /></SwiperSlide>
+                    <SwiperSlide key={slid.id}><Image className=' object-cover  w-full ' alt={`sample-${slid.id}`} src={slid.src} fill priority /></SwiperSlide>
                   )
                 }
               </Swiper>
@@ -101,7 +101,7 @@ export default function Projects() {
 
           <div className='w-full'>
 
-            <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className="2xl:h-[300px] h-[100px] flex items-center px-[15%]" style={{ color: '#DFAE42', backgroundColor: '#DFAE42' }}>
+            <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className="2xl:h-[300px] h-[100px] flex items-center px-[15%] mt-[-4px]" style={{ color: '#DFAE42', backgroundColor: '#DFAE42' }}>
               <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className="2xl:text-[35px] text-[12px] font-black text-white ">
                 <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className="me-4   shadow-inner 2xl:w-[25px] 2xl:h-[25px] w-[10px] h-[10px] rounded-full" style={{ backgroundColor: '#ffffff', display: "inline-block", boxShadow: 'inset 0px 6.95675px 6.95675px rgba(0, 0, 0, 0.25)' }}></motion.div>
                 أسبار تضمن <span className="text-black"> زيادة</span> في مبيعاتك في حال وفرت تغليف مميز لمنتجك..كيف؟

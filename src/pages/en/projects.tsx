@@ -88,11 +88,11 @@ export default function Projects() {
 
 
           <div className='w-full mt-5'>
-            <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className='h-80 lg:h-[64vh]  min-w-full  overflow-hidden'>
+            <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className='h-32 lg:h-[60vh]  min-w-full  overflow-hidden'>
               <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 2500, disableOnInteraction: false, }} className="mySwiper w-full h-full select-none">
                 {
                   SLIDER_DATA_A.map(slid =>
-                    <SwiperSlide key={slid.id}><Image className=' object-contain w-full' alt={`sample-${slid.id}`} src={slid.src} fill priority /></SwiperSlide>
+                    <SwiperSlide key={slid.id}><Image className='object-cover  w-full' alt={`sample-${slid.id}`} src={slid.src} fill priority /></SwiperSlide>
                   )
                 }
               </Swiper>
