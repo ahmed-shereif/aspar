@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { TRANS } from '../../CONSTS'
 import { Autoplay, Pagination } from "swiper";
-import { BsCloudDownload } from 'react-icons/bs'
-import { FaArrowRight } from 'react-icons/fa'
+import backgroundImg from '../../../public/project-img-1.jpg'
+
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -48,8 +49,11 @@ export default function Projects() {
           <motion.div viewport={{ once: true }} whileInView={{ x: isMobile ? [50, 0] : [100, 0], opacity: [0, 1] }} transition={{ delay: 0.1, ...TRANS }} initial={{ opacity: 0 }} className="w-full  relative text-black flex justify-center items-center ">
             <Image alt="123" width={0}
               height={0}
-              sizes="100vw" className="w-full "
-              src="/project-img-1.jpg" />
+              sizes="100vw"
+              src={backgroundImg}
+              placeholder="blur"
+            />
+
           </motion.div>
 
           <div className=" bg-white ">
@@ -138,7 +142,7 @@ export default function Projects() {
               <div className="w-full   mt-1 lg:mt-2 2xl:text-[20px] text-[12px]"> Even if your product is of high quality, it may be undervalued by the customer if it is not packaged effectively. Poor packaging can lead to a negative perception of your product and can discourage customers from buying from your brand again. Therefore, it is important to invest in great packaging to ensure that your product is well-received and leaves a positive impression on the customer.
               </div>
             </motion.div>
-            <motion.div animate={{ opacity: [0, 1], x: [-50, 0] }} transition={TRANS} className='order-1 lg:order-2 w-full lg:w-1/2 h-80 xl:h-full relative overflow-hidden rounded-[4rem]  mt-8 lg:mt-0 '>
+            <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className='order-1 lg:order-2 w-full lg:w-1/2 h-80 xl:h-full relative overflow-hidden rounded-[4rem]  mt-8 lg:mt-0 '>
               <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 2500, disableOnInteraction: false, }} className="mySwiper h-full select-none">
                 {
                   SLIDER_DATA_B.map(slid =>
