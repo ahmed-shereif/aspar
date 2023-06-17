@@ -49,7 +49,7 @@ export default function Projects() {
             <Image alt="123" width={0}
               height={0}
               sizes="100vw" className="w-full "
-              src="/project-img-3.png" />
+              src="/project-img-1.jpg" />
           </motion.div>
 
           <div className=" bg-white ">

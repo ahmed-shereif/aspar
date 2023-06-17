@@ -23,19 +23,18 @@ const PROCESS_DATA = [
 ]
 
 const SLIDER_DATA_A = [
-  { id: 1, src: '/home.png' },
-  { id: 2, src: '/home.png' },
-  { id: 3, src: '/home.png' },
-  { id: 4, src: '/home.png' },
-  { id: 5, src: '/home.png' },
+  { id: 1, src: '/h1.png' },
+  { id: 2, src: '/h2.jpg' },
+  { id: 3, src: '/h3.png' },
+  { id: 4, src: '/h4.jpg' },
+  { id: 5, src: '/h6.png' },
 
 ]
 
 const SLIDER_DATA_B = [
-  { id: 1, src: '/sample-01.jpg' },
-  { id: 2, src: '/sample-02.jpg' },
-  { id: 3, src: '/sample-03.jpg' },
-  { id: 4, src: '/sample-04.jpg' },
+  { id: 1, src: '/h7.jpg' },
+  { id: 1, src: '/h8.jpg' },
+
 ]
 
 import { TRANS } from '../../CONSTS'
