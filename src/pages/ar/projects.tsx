@@ -114,9 +114,9 @@ export default function Projects() {
 
           </div>
 
-          <div className="flex w-full  screen-optz items-center lg:flex-row lg:pt-[100px] pt-[50px] flex-wrap lg:flex-nowrap bg-white  mx-auto" >
+          <div className="flex w-full  screen-optz items-center lg:flex-row lg:pt-[100px] pt-[50px] flex-wrap lg:flex-nowrap bg-white  mx-auto px-[5%] 2xl:px-0" >
             <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01" src={'/roll1.png'} height={1000} width={1000} className="h-64 w-64 lg:h-80 lg:w-96 2xl:h-96 2xl:w-[36rem] 2xl:rounded-[100px] rounded-[70px]" />
+              <Image alt="about-01" src={'/roll1.png'} height={600} width={600} className=" 2xl:rounded-[100px] rounded-[70px]" />
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} className="w-full lg:w-1/2 flex flex-col justify-around  mt-8 lg:mt-0 font-[700] lg:pe-16 text-center md:text-start">
               <div className="w-full px-4  font-black mb-1 lg:mb-2 2xl:text-[28px] text-[16px] " style={{ color: '#DFAE42' }}>
@@ -157,9 +157,9 @@ export default function Projects() {
             </motion.div>
           </div>
 
-          <div className="flex w-full items-center lg:flex-row lg:pt-[150px] pt-[50px] lg:pb-[150px] pb-[50px] flex-wrap lg:flex-nowrap   mx-auto" style={{ backgroundColor: '#DFAE42' }} >
+          <div className="flex w-full items-center lg:flex-row lg:pt-[150px] pt-[50px] lg:pb-[150px] pb-[50px] flex-wrap lg:flex-nowrap   mx-auto px-[5%]" style={{ backgroundColor: '#DFAE42' }} >
             <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01" src={'/ph-3.png'} height={1000} width={1000} className="h-64 w-64 lg:h-80 lg:w-96 2xl:h-96 2xl:w-[36rem] 2xl:rounded-[100px] rounded-[70px]" />
+              <Image alt="about-01" src={'/ph-3.png'} height={600} width={600} className="2xl:rounded-[100px] rounded-[70px]" />
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} transition={TRANS} className="w-full lg:w-1/2 flex flex-col justify-around  mt-8 lg:mt-0  lg:pe-16 text-center md:text-start font-black">
               <div className="w-full  text-white p-4  2xl:text-[30px] text-[16px] ">
