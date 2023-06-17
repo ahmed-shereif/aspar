@@ -61,7 +61,7 @@ export default function Home() {
               <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 3000, disableOnInteraction: false, }} className="mySwiper h-full select-none">
                 {
                   SLIDER_DATA_A.map(slid =>
-                    <SwiperSlide key={slid.id}><Image alt={`sample-${slid.id}`} src={slid.src} fill priority sizes='' /></SwiperSlide>
+                    <SwiperSlide key={slid.id}><Image className='object-cover' alt={`sample-${slid.id}`} src={slid.src} fill priority sizes='' /></SwiperSlide>
                   )
                 }
               </Swiper>

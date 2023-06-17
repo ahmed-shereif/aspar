@@ -53,8 +53,11 @@ export default function Projects() {
           </motion.div>
 
           <div className=" bg-white ">
-            <div className="text-center 2xl:text-left 2xl:ml-[150px] 2xl:pt-[70px] pt-[20px]" >
+            <div className="text-center 2xl:text-left 2xl:ml-[150px] 2xl:pt-[70px] pt-[20px] relative mx-10" >
 
+              <div className="absolute 2xl:top-[-150px] 2xl:w-[600px] 2xl:ms-[-400px] w-[300px] top-[-90px] ms-[-190px]" >
+                <svg id="eA9XT8FSLBV1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><rect width="94.227058" height="30.531672" rx="0" ry="0" transform="translate(77.092472 107.913669)" fill="#dfae42" stroke-width="0" /><ellipse rx="13.137794" ry="15.265836" transform="translate(171.319528 123.179505)" fill="#dfae42" stroke-width="0" /></svg>
+              </div>
               <p className="2xl:text-[30px] lg:text-[20px] text-[15px]  font-black">
                 12-25% of your product's retail price is recommended to be paid on the packaging.
 
@@ -69,11 +72,11 @@ export default function Projects() {
               </p>
             </div>
 
-            <div className="text-center 2xl:text-left 2xl:ml-[150px] 2xl:mt-[50px] mt-[20px]">
+            <div className="mx-5 2xl:text-left 2xl:ml-[150px] 2xl:mt-[50px] mt-[20px]">
               {
-                statistics.map((stat, i) => <p className="2xl:text-[28px] text-[12px]  font-black inline-block" style={{ color: '#DFAE42' }}>
-                  <div className="mr-4   shadow-inner 2xl:w-[25px] 2xl:h-[25px] w-[10px] h-[10px] rounded-full" style={{ backgroundColor: '#DFAE42', display: "inline-block", boxShadow: 'inset 0px 6.95675px 6.95675px rgba(0, 0, 0, 0.25)' }}></div>
-                  <span className="2xl:text-[32px] text-[12px]  font-black" style={{ color: '#000' }}>{stat.precentage} </span>
+                statistics.map((stat, i) => <p className=" 2xl:text-[28px] text-[10px]  font-black inline-block" style={{ color: '#DFAE42' }}>
+                  <div className="mr-2   shadow-inner 2xl:w-[25px] 2xl:h-[25px] w-[10px] h-[10px] rounded-full" style={{ backgroundColor: '#DFAE42', display: "inline-block", boxShadow: 'inset 0px 6.95675px 6.95675px rgba(0, 0, 0, 0.25)' }}></div>
+                  <span className="2xl:text-[28px] text-[10px]  font-black" style={{ color: '#000' }}>{stat.precentage} </span>
                   {stat.desc}</p>)
               }
 

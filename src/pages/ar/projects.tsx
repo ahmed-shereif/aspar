@@ -52,10 +52,13 @@ export default function Projects() {
               src="/project-img-1.jpg" />
           </motion.div>
 
-          <div className=" bg-white ">
-            <div className="text-center 2xl:text-right 2xl:ms-[150px] 2xl:pt-[70px] pt-[20px]" >
+          <div className=" bg-white w-full">
+            <div className="text-center 2xl:text-right  2xl:pt-[70px] pt-[20px] relative mx-10 2xl:ps-20 " >
 
-              <p className="2xl:text-[30px] lg:text-[20px] text-[15px]  font-black">
+              <div className="absolute 2xl:top-[-140px] 2xl:w-[600px] 2xl:ms-[-470px] w-[300px] top-[-90px] ms-[-220px] " >
+                <svg id="eDlBi26mfyO1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><rect width="94.227058" height="30.531672" rx="0" ry="0" transform="matrix(.681231 0 0 1 92.110805 107.913669)" fill="#dfae42" stroke-width="0" /><ellipse rx="13.137794" ry="15.265836" transform="matrix(1.143137 0 0 1 156.477252 123.179459)" fill="#dfae42" stroke-width="0" /><ellipse rx="10.82638" ry="15.265836" transform="matrix(1.36338 0 0 0.999997 91.837724 123.179551)" fill="#dfae42" stroke-width="0" /></svg>
+              </div>
+              <p className="2xl:text-[30px] lg:text-[20px] text-[15px]  font-black ">
                 المقترح انك تصرف ١٢-٢٥٪؜ من سعر المنتج النهائي على التغليف
 
               </p>
@@ -72,7 +75,7 @@ export default function Projects() {
             <div className="text-start 2xl:text-right 2xl:ms-[70px] ms-[20px] 2xl:mt-[50px] mt-[20px] ">
               {
                 statistics.map((stat, i) => <p className="2xl:text-[28px] text-[12px]  font-black inline-block w-full" style={{ color: '#DFAE42' }}>
-                  <div className="me-4   shadow-inner 2xl:w-[25px] 2xl:h-[25px] w-[10px] h-[10px] rounded-full" style={{ backgroundColor: '#DFAE42', display: "inline-block", boxShadow: 'inset 0px 6.95675px 6.95675px rgba(0, 0, 0, 0.25)' }}></div>
+                  <div className="me-2   shadow-inner 2xl:w-[25px] 2xl:h-[25px] w-[10px] h-[10px] rounded-full" style={{ backgroundColor: '#DFAE42', display: "inline-block", boxShadow: 'inset 0px 6.95675px 6.95675px rgba(0, 0, 0, 0.25)' }}></div>
                   <span className="2xl:text-[32px] text-[12px]  font-black" style={{ color: '#000' }}>{stat.precentage} </span>
                   {stat.desc}</p>)
               }
