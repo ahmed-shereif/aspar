@@ -93,12 +93,6 @@ export default function Home() {
                 }
               </Swiper>
             </motion.div>
-            <div className='flex justify-center lg:justify-end'>
-              <a href='https://www.facebook.com/' className='btn font-bold hover:border-white shadow-xl hover:text-white bg-white h-16 text-primary  border-transparent rounded-full px-8 '>
-                <div className='w-28 '>حمل الكتالوج الخاص بنا</div>
-                <div className='text-4xl ml-4'><BsCloudDownload /></div>
-              </a>
-            </div>
           </div>
 
           <div className='screen-optz w-full px-12 lg:px-24 lg:py-12 py-8   2xl:px-12 '>
