@@ -56,7 +56,7 @@ export default function About() {
               </div>
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01" src={'/a1.png'} height={1000} width={1000} className="h-64 w-64 lg:h-80 lg:w-96 2xl:h-96 2xl:w-[36rem] rounded-[100px]" />
+              <Image alt="about-01" src={'/a1.png'} height={1000} width={1000} className="h-64 w-72 lg:h-80 lg:w-96 2xl:h-96 2xl:w-[36rem] rounded-[100px]" />
             </motion.div>
 
           </div>
