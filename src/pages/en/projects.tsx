@@ -30,7 +30,7 @@ const SLIDER_DATA_B = [
 
 
 const SLIDER_DATA_A = [
-  { id: 442, src: '/3in-1-1.png' },
+  { id: 442, src: '/3in-1.png' },
   { id: 441, src: '/3in-1-2.png' },
 
 ]
