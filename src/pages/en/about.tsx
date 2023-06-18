@@ -56,13 +56,13 @@ export default function About() {
               </div>
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01" src={'/about-01.png'} height={1000} width={1000} className="h-64 w-64 lg:h-80 lg:w-96 2xl:h-96 2xl:w-[36rem]" />
+              <Image alt="about-01" src={'/a1.png'} height={1000} width={1000} className="h-64 w-64 lg:h-80 lg:w-96 2xl:h-96 2xl:w-[36rem]" />
             </motion.div>
 
           </div>
           <div className="flex lg:flex-row lg:py-16 flex-wrap lg:flex-nowrap">
-            <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01" src={'/about-02.png'} height={2000} width={2000} className="h-64 w-64 lg:h-96 lg:w-96 rounded-full" />
+            <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className=" w-full lg:w-1/2 relative overflow-hidden justify-center flex">
+              <Image alt="about-01" src={'/a2.png'} style={{ backgroundColor: '#655B78' }} height={2000} width={2000} className="  h-64 w-[300px] lg:h-[440px] lg:w-[600px] rounded-[190px]" />
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} transition={TRANS} className="w-full lg:w-1/2 flex flex-col justify-around text-xl lg:text-2xl mt-8 lg:mt-0 ">
               <div className="w-full text-error font-black mb-4 lg:mb-0">Why aspar?</div>

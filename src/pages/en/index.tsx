@@ -14,26 +14,26 @@ import Link from 'next/link';
 
 
 const PROCESS_DATA = [
-  { id: 1, name: 'meet', image: 'meeting.svg' },
-  { id: 2, name: 'desgin', image: 'design.svg' },
-  { id: 3, name: 'present', image: 'present.svg' },
-  { id: 4, name: 'manufacture', image: 'manufacturing.svg' },
-  { id: 5, name: 'quality check', image: 'qc.svg' },
-  { id: 6, name: 'deliver', image: 'delivery.svg' },
+  { id: 81, name: 'meet', image: 'meeting.svg' },
+  { id: 82, name: 'desgin', image: 'design.svg' },
+  { id: 83, name: 'present', image: 'present.svg' },
+  { id: 84, name: 'manufacture', image: 'manufacturing.svg' },
+  { id: 85, name: 'quality check', image: 'qc.svg' },
+  { id: 86, name: 'deliver', image: 'delivery.svg' },
 ]
 
 const SLIDER_DATA_A = [
-  { id: 1, src: '/h1.png' },
-  { id: 2, src: '/h2.jpg' },
-  { id: 3, src: '/h3.png' },
-  { id: 4, src: '/h4.jpg' },
-  { id: 5, src: '/h6.png' },
+  { id: 51, src: '/h1.png' },
+  { id: 52, src: '/h2.png' },
+  { id: 53, src: '/h33.png' },
+  { id: 54, src: '/h4.png' },
+  { id: 55, src: '/h55.png' },
 
 ]
 
 const SLIDER_DATA_B = [
-  { id: 1, src: '/h7.jpg' },
-  { id: 1, src: '/h8.jpg' },
+  { id: 41, src: '/h77.png' },
+  { id: 42, src: '/h88.png' },
 
 ]
 
@@ -54,12 +54,12 @@ export default function Home() {
       </Head>
       <motion.main animate={{ opacity: [0.8, 1] }} transition={TRANS}  >
         <section className='flex lg:min-h-screen justify-center flex-wrap lg:pt-20'>
-          <div className='w-full screen-optz px-12 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 flex flex-wrap overflow-x-hidden '>
+          <div className='w-full screen-optz px-6 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 flex flex-wrap overflow-x-hidden '>
             <motion.div animate={{ opacity: [0, 1], x: [-50, 0] }} transition={TRANS} className='w-full lg:w-1/2 h-80 xl:h-full relative overflow-hidden rounded-[4rem]'>
-              <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 3000, disableOnInteraction: false, }} className="mySwiper h-full select-none">
+              <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 3000, disableOnInteraction: false, }} className="mySwiper  select-none w-full">
                 {
                   SLIDER_DATA_A.map(slid =>
-                    <SwiperSlide key={slid.id}><Image alt={`sample-${slid.id}`} src={slid.src} fill priority sizes='' /></SwiperSlide>
+                    <SwiperSlide key={slid.id}><Image className='object-cover' alt={`sample-${slid.id}`} src={slid.src} fill priority sizes='' /></SwiperSlide>
                   )
                 }
               </Swiper>
@@ -81,9 +81,9 @@ export default function Home() {
 
         </section>
         <section className='flex bg-primary justify-center flex-wrap'>
-          <div className='screen-optz w-full  px-12 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 '>
-            <motion.div viewport={{ once: true }} whileInView={{ opacity: [0, 1], y: [-50, 0] }} transition={TRANS} className='h-80 lg:h-[80vh]  my-8 rounded-[5rem] overflow-hidden'>
-              <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 2500, disableOnInteraction: false, }} className="mySwiper h-full select-none">
+          <div className='screen-optz w-full  px-6 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 '>
+            <motion.div viewport={{ once: true }} whileInView={{ opacity: [0, 1], y: [-50, 0] }} transition={TRANS} className='h-60 lg:h-[80vh]  my-8 rounded-[5rem] overflow-hidden'>
+              <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 2500, disableOnInteraction: false, }} className="mySwiper 2xl:h-full select-none">
                 {
                   SLIDER_DATA_B.map(slid =>
                     <SwiperSlide key={slid.id}><Image className=' object-cover' alt={`sample-${slid.id}`} src={slid.src} fill priority sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,100vw" /></SwiperSlide>

@@ -23,8 +23,8 @@ let statistics = [
 
 
 const SLIDER_DATA_B = [
-  { id: 112, src: '/ph-1.jpg' },
-  { id: 212, src: '/ph-2.png' },
+  { id: 112, src: '/p1.png' },
+  { id: 212, src: '/p2.png' },
 
 ]
 
@@ -121,7 +121,7 @@ export default function Projects() {
 
           <div className="px-[5%] 2xl:px-0 flex w-full  screen-optz items-center lg:flex-row lg:pt-[100px] pt-[50px] flex-wrap lg:flex-nowrap bg-white  mx-auto" >
             <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01" src={'/roll1.png'} height={600} width={600} className="2xl:rounded-[100px] rounded-[70px]" />
+              <Image alt="about-01" src={'/p3.png'} height={600} width={600} className="2xl:rounded-[100px] rounded-[70px]" />
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} className="w-full lg:w-1/2 flex flex-col justify-around  mt-8 lg:mt-0 font-[700] lg:pr-16 text-center md:text-start">
               <div className="w-full  font-black mb-1 lg:mb-2 2xl:text-[28px] text-[16px] " style={{ color: '#DFAE42' }}>1- User Generated Content: </div>
@@ -166,7 +166,7 @@ export default function Projects() {
 
           <div className="flex w-full items-center lg:flex-row lg:pt-[150px] pt-[50px] lg:pb-[150px] pb-[50px] flex-wrap lg:flex-nowrap  px-[5%] mx-auto " style={{ backgroundColor: '#DFAE42' }} >
             <motion.div viewport={{ once: true }} whileInView={{ x: [-100, 0] }} transition={TRANS} className="w-full lg:w-1/2 relative overflow-hidden justify-center flex">
-              <Image alt="about-01 object-cover" src={'/ph-3.png'} height={600} width={600} className=" 2xl:rounded-[100px] rounded-[70px]" />
+              <Image alt="about-01 object-cover" src={'/p4.png'} height={600} width={600} className=" 2xl:rounded-[100px] rounded-[70px]" />
             </motion.div>
             <motion.div viewport={{ once: true }} whileInView={{ x: [100, 0] }} transition={TRANS} className="w-full lg:w-1/2 flex flex-col justify-around  mt-8 lg:mt-0  lg:pr-16 text-center md:text-start font-black">
               <div className="w-full  text-white   2xl:text-[30px] text-[16px] ">
