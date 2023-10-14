@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const cls = ['#F7CC2380', '#F4572280', '#97D2D880', '#DFAE4280', '#fdd51c80']
 const LINKS_DATA = [
-  { id: 1, text: 'Home', ar: 'الرئيــــسية', link: '/' },
+  { id: 1, text: 'Home', ar: 'الرئيــــسية', link: '/شركة-تصميم-وتغيف-عطور-عبايات-ملابس' },
   { id: 2, text: 'About', ar: 'عن أسبار', link: 'about' },
   { id: 3, text: 'Process', ar: 'سير العملية', link: 'process' },
   { id: 4, text: 'Packaging', ar: 'التغليف', link: 'projects' },

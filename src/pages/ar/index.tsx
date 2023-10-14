@@ -15,27 +15,28 @@ import useIsMobile from '@/hooks/isMobile';
 
 
 const PROCESS_DATA = [
-  { id: 81, name: 'التواصل', image: 'meeting.svg' },
-  { id: 82, name: 'التصميم', image: 'design.svg' },
-  { id: 83, name: 'عرض التصميم', image: 'present.svg' },
-  { id: 84, name: 'التنفيذ', image: 'manufacturing.svg' },
-  { id: 85, name: 'تدقيق الجودة', image: 'qc.svg' },
-  { id: 86, name: 'التوصيل', image: 'delivery.svg' },
+  { id: 1, name: 'التواصل', image: 'meeting.svg' },
+  { id: 2, name: 'التصميم', image: 'design.svg' },
+  { id: 3, name: 'عرض التصميم', image: 'present.svg' },
+  { id: 4, name: 'التنفيذ', image: 'manufacturing.svg' },
+  { id: 5, name: 'تدقيق الجودة', image: 'qc.svg' },
+  { id: 6, name: 'التوصيل', image: 'delivery.svg' },
 ]
 
 const SLIDER_DATA_A = [
-  { id: 1, src: '/h1.png' },
-  { id: 2, src: '/h2.png' },
-  { id: 3, src: '/h33.png' },
-  { id: 4, src: '/h4.png' },
-  { id: 5, src: '/h55.png' },
+  { id: 1, src: '/home.png' },
+  { id: 2, src: '/home.png' },
+  { id: 3, src: '/home.png' },
+  { id: 4, src: '/home.png' },
+  { id: 5, src: '/home.png' },
 
 ]
 
 const SLIDER_DATA_B = [
-  { id: 41, src: '/h77.png' },
-  { id: 42, src: '/h88.png' },
-
+  { id: 1, src: '/sample-01.jpg' },
+  { id: 2, src: '/sample-02.jpg' },
+  { id: 3, src: '/sample-03.jpg' },
+  { id: 4, src: '/sample-04.jpg' },
 ]
 
 import { TRANS } from '../../CONSTS'
@@ -46,29 +47,31 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>الصفحة الرئيسية | اسبار </title>
-        <meta name="description" content={"مرحبا , سلم أسبار التغليم وركز على منتجك"} />
-        <meta property="og:title" content={"الصفحة الرئيسية"} />
-        <meta property="og:description" content={"مرحبا , سلم أسبار التغليم وركز على منتجك"} />
+        <title>شركة تصميم وتغليف - تغليف عطور وعبايات وملابس | اسبار</title>
+        <meta name="description" content={"أسبار تعمل على الهيئة الخارجية لمنتجاتكم بحيث تصل للعميل بأفضل طريقة ممكنة. يتم العمل على أدق التفاصيل لكل عميل وتصميم وتصنيع تغليف مناسب يتماشى مع سعر المنتج والهوية البصرية للمشروع"} />
+        <meta name="keywords" content={"شركات تغليف, تغليف عطور, باكجنق عطور, تغليف ملابس, باكجنق ملابس, باكجنق عبايات, بوكسات عبايات, علب كرتونية للعبايات, علب للعطور"} />
+        <meta property="og:title" content={"شركة تصميم وتغليف - تغليف عطور وعبايات وملابس | اسبارالصفحة الرئيسية"} />
+        <meta property="og:description" content={"أسبار تعمل على الهيئة الخارجية لمنتجاتكم بحيث تصل للعميل بأفضل طريقة ممكنة. يتم العمل على أدق التفاصيل لكل عميل وتصميم وتصنيع تغليف مناسب يتماشى مع سعر المنتج والهوية البصرية للمشروع"} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.asparpackaging.com/ar" />
+        <link rel="canonical" href="https://www.asparpackaging.com/ar"></link>
 
       </Head>
       <motion.main dir='rtl' animate={{ opacity: [0.8, 1] }} transition={TRANS}  >
         <section className='flex lg:min-h-screen justify-center flex-wrap lg:pt-20'>
-          <div className='w-full screen-optz px-6 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 flex flex-wrap overflow-x-hidden '>
+          <div className='w-full screen-optz px-12 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 flex flex-wrap overflow-x-hidden '>
             <motion.div animate={{ opacity: [0, 1], x: [100, 0] }} transition={TRANS} className='w-full lg:w-1/2 h-80 xl:h-full relative overflow-hidden rounded-[4rem]'>
-              <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 3000, disableOnInteraction: false, }} className="mySwiper  select-none w-full">
+              <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 3000, disableOnInteraction: false, }} className="mySwiper h-full select-none">
                 {
                   SLIDER_DATA_A.map(slid =>
-                    <SwiperSlide key={slid.id}><Image className='object-cover' alt={`sample-${slid.id}`} src={slid.src} fill priority sizes='' /></SwiperSlide>
+                    <SwiperSlide key={slid.id}><Image alt={`sample-${slid.id}`} src={slid.src} fill priority sizes='' /></SwiperSlide>
                   )
                 }
               </Swiper>
             </motion.div>
             <motion.div animate={{ x: [50, 0] }} transition={TRANS} className='w-full lg:w-1/2 lg:pr-20'>
               <div className='font-black text-4xl lg:text-6xl 2xl:text-8xl text-primary lg:mb-10 2xl:mb-20 uppercase lg:normal-case my-4 '>مرحباً  ,</div>
-              <div className='lg:mt-10 2xl:mb-20  font-black text-3xl lg:text-5xl 2xl:text-6xl text-primary  my-4'>سلمنا التغليف</div>
+              <h1 className='lg:mt-10 2xl:mb-20  font-black text-3xl lg:text-5xl 2xl:text-6xl text-primary  my-4'>سلمنا التغليف</h1>
               <div className='text-3xl lg:text-4xl 2xl:text-6xl max-w-md lg:leading-[5rem] text-black font-semibold'>وركز على منتجك</div>
               <div className=' uppercase text-info mb-4 text-right max-w-md font-medium'>فريق أسبار</div>
               <div className='text-center  my-4'>
@@ -83,8 +86,8 @@ export default function Home() {
 
         </section>
         <section className='flex bg-primary justify-center flex-wrap'>
-          <div className='screen-optz w-full  px-6 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 '>
-            <motion.div viewport={{ once: true }} whileInView={{ opacity: [0, 1], y: [-50, 0] }} transition={TRANS} className='h-60 lg:h-[80vh]  my-8 rounded-[5rem] overflow-hidden'>
+          <div className='screen-optz w-full  px-12 lg:px-24 lg:py-12 py-8 2xl:py-24  2xl:px-12 '>
+            <motion.div viewport={{ once: true }} whileInView={{ opacity: [0, 1], y: [-50, 0] }} transition={TRANS} className='h-80 lg:h-[80vh]  my-8 rounded-[5rem] overflow-hidden'>
               <Swiper pagination={{ clickable: true }} modules={[Autoplay, Pagination]} autoplay={{ delay: 2500, disableOnInteraction: false, }} className="mySwiper h-full select-none">
                 {
                   SLIDER_DATA_B.map(slid =>
@@ -93,6 +96,12 @@ export default function Home() {
                 }
               </Swiper>
             </motion.div>
+            <div className='flex justify-center lg:justify-end'>
+              <a href='https://www.facebook.com/' className='btn font-bold hover:border-white shadow-xl hover:text-white bg-white h-16 text-primary  border-transparent rounded-full px-8 '>
+                <div className='w-28 '>حمل الكتالوج الخاص بنا</div>
+                <div className='text-4xl ml-4'><BsCloudDownload /></div>
+              </a>
+            </div>
           </div>
 
           <div className='screen-optz w-full px-12 lg:px-24 lg:py-12 py-8   2xl:px-12 '>
